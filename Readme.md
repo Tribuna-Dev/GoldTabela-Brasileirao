@@ -46,5 +46,16 @@ O projeto está organizado nos seguintes módulos principais:
 - `round_registration_controller.py` - Controla o registro das partidas de uma rodada.
 - `unregister_match_controller.py` - Controla o alteração do resultado ou dos times de uma rodada.
 
-### `model`
+### Outros tópicos importantes
+A aplicação é guiada por eventos. A logica para a criação de desses eventos estão no arquivo 'event_manager' dentro da pasta 'utils'. Nessa lógica as views se inscrevem nos eventos e o controller dispara o evento. Por exemplo a view da janela principal se inscreve no evento de acessar uma rodada selecionada. O controller vai disparar esse evento quando o botão for acionado e a view vai direcionar para a janela da rodada correspondente.
+
+O 'RoundService' salva os dados localmente para não precisar acessar o banco de dados toda hora (Como uma cache).
+
+As interações com o banco de dados ocorrem só em arquivos DAOs.
+
+para rodar o codigo o comando é: 'python goldTabela.py'
+
+para gerar o executavel o comando é: 'pyinstaller --onefile --noconsole --icon=Assets/img/icon.ico GoldTabela.py'
+
+
 - 
