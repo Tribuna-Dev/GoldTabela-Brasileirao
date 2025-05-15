@@ -1,0 +1,24 @@
+# Arquivos de configuração sensíveis
+/config/database_config.py
+
+# Diretórios de cache do Python
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+
+# Arquivos do IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Arquivos temporários
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.log
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
