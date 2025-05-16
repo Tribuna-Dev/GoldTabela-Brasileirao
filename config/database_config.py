@@ -1,8 +1,8 @@
 DB_CONFIG = {
-    'host': 'cpl79.hosting24.com',     
-    'database': 'atribuna_GoldTabela',          
-    'user': 'atribuna_gewehr',              
-    'password': 'IuuAX8LL(oZ1',            
-    'port': 3306,                             
+    'host': 'endereço do host',     
+    'database': 'nome do BD',          
+    'user': 'usuário do BD',              
+    'password': 'senha do BD',            
+    'port': porta de acesso,                             
     'charset': 'utf8mb4',               
 }
